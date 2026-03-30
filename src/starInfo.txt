@@ -1,0 +1,80 @@
+1. Name: Sol
+Distance: 0ly
+Type: G2V
+
+2. Name: Alpha Centauri
+Distance: 4.4ly
+Type: G2V
+
+3. Name: Barnard star
+Distance: 6ly
+Type: M4 V
+
+4. Name: Luhman 16
+Distance: 6.5ly
+Type: L7.5
+
+5. Name: WISE 0855-0714
+Distance: 7.3ly
+Type: Y2
+
+6. Name: Wolf 359
+Distance: 7.9ly
+Type: M6.5 Ve
+
+7. Name: Lalande 21185
+Distance: 8.3ly
+Type: M2+V
+
+8. Name: Sirius
+Distance: 8.7ly
+Type: A0mA1 Va
+
+9. Name: Luyten 726-8
+Distance: 8.9ly
+Type: M5.5 V
+
+10. Name: Ross 154
+Distance: 9.7ly
+Type: M3.5 V
+
+11. Name: Ross 248
+Distance: 10.3ly
+Type: M5.0V
+
+12. Name: Epsilon Eridani
+Distance: 10.5ly
+Type: K2 V
+
+13. Name: Lacaille 9352
+Distance: 10.7ly
+Type: M1V
+
+14. Name: Ross 128
+Distance: 11ly
+Type: M3V
+
+15. Name: EZ Aquarii
+Distance: 11.1ly
+Type: M5 V
+
+16. Name: 61 Cygni
+Distance: 11.4ly
+Type: K5 V
+
+17. Name: Procyon
+Distance: 11.5ly
+Type: F5IV
+
+18. Name: Struve 2398
+Distance: 11.5ly
+Type: M3 V
+
+19. Name: 2MASS J1812-2608
+Distance: 11.6ly
+Type: T
+
+20. Name: Groombridge 34
+Distance: 11.6ly
+Type: M2V
+

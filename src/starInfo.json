@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Sol",
+        "distance": 0.0,
+        "star_type": "G2V",
+        "size": 6,
+        "color": "#ffdd80"
+    },
+    {
+        "name": "Alpha Centauri",
+        "distance": 4.4,
+        "star_type": "G2V",
+        "size": 6,
+        "color": "#ffdd80"
+    },
+    {
+        "name": "Barnard star",
+        "distance": 6.0,
+        "star_type": "M4 V",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "Luhman 16",
+        "distance": 6.5,
+        "star_type": "L7.5",
+        "size": 3,
+        "color": "#8B4513"
+    },
+    {
+        "name": "WISE 0855-0714",
+        "distance": 7.3,
+        "star_type": "Y2",
+        "size": 2,
+        "color": "#2a2a2a"
+    },
+    {
+        "name": "Wolf 359",
+        "distance": 7.9,
+        "star_type": "M6.5 Ve",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "Lalande 21185",
+        "distance": 8.3,
+        "star_type": "M2+V",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "Sirius",
+        "distance": 8.7,
+        "star_type": "A0mA1 Va",
+        "size": 8,
+        "color": "#f0f4ff"
+    },
+    {
+        "name": "Luyten 726-8",
+        "distance": 8.9,
+        "star_type": "M5.5 V",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "Ross 154",
+        "distance": 9.7,
+        "star_type": "M3.5 V",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "Ross 248",
+        "distance": 10.3,
+        "star_type": "M5.0V",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "Epsilon Eridani",
+        "distance": 10.5,
+        "star_type": "K2 V",
+        "size": 5,
+        "color": "#ff9050"
+    },
+    {
+        "name": "Lacaille 9352",
+        "distance": 10.7,
+        "star_type": "M1V",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "Ross 128",
+        "distance": 11.0,
+        "star_type": "M3V",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "EZ Aquarii",
+        "distance": 11.1,
+        "star_type": "M5 V",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "61 Cygni",
+        "distance": 11.4,
+        "star_type": "K5 V",
+        "size": 5,
+        "color": "#ff9050"
+    },
+    {
+        "name": "Procyon",
+        "distance": 11.5,
+        "star_type": "F5IV",
+        "size": 7,
+        "color": "#fff4c2"
+    },
+    {
+        "name": "Struve 2398",
+        "distance": 11.5,
+        "star_type": "M3 V",
+        "size": 4,
+        "color": "#ff6030"
+    },
+    {
+        "name": "2MASS J1812-2608",
+        "distance": 11.6,
+        "star_type": "T",
+        "size": 2,
+        "color": "#4a3728"
+    },
+    {
+        "name": "Groombridge 34",
+        "distance": 11.6,
+        "star_type": "M2V",
+        "size": 4,
+        "color": "#ff6030"
+    }
+]
