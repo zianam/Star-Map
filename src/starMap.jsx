@@ -37,55 +37,59 @@ function StarMap() {
   // }
 
    const createStars = (svg) => {
-  const starGroups = svg.selectAll("g.star")
-    .data(stars)
-    .join("g")
-    .attr("class", "star")
-    .attr("transform", (d, i) => {
-      const x = width / 2 + d.distance * dist * Math.cos((i / stars.length) * 2 * Math.PI)
-      const y = height / 2 + d.distance * dist * Math.sin((i / stars.length) * 2 * Math.PI) * 0.5
-      return `translate(${x}, ${y})`
-    })
-
-  starGroups.append("circle")
-    .attr("r", d => d.size * 6)
-    .attr("fill", d => d.color)
-    .attr("opacity", 0.06)
-
-  starGroups.append("circle")
-    .attr("r", d => d.size * 3)
-    .attr("fill", d => d.color)
-    .attr("opacity", 0.15)
-
-  starGroups.append("circle")
-    .attr("r", d => d.size)
-    .attr("fill", d => d.color)
-    .attr("opacity", 1)
-
-  starGroups.on("mouseover", (event, d) => {
-    d3.select(event.currentTarget).selectAll("circle")
-      .attr("r", (_, i) => {
-        if (i === 0) return d.size * 10
-        if (i === 1) return d.size * 5
-        return d.size * 2
+    const starGroups = svg.selectAll("g.star")
+      .data(stars)
+      .join("g")
+      .attr("class", "star")
+      .attr("transform", (d, i) => {
+        const x = width / 2 + d.distance * dist * Math.cos((i / stars.length) * 2 * Math.PI)
+        const y = height / 2 + d.distance * dist * Math.sin((i / stars.length) * 2 * Math.PI) * 0.5
+        return `translate(${x}, ${y})`
       })
 
-    d3.select("#tooltip")
-      .style("opacity", 1)
-      .style("left", event.pageX + 12 + "px")
-      .style("top", event.pageY + "px")
-      .html(`<strong>${d.name}</strong><br/>${d.distance} ly<br/>${d.star_type}`)
-  })
-  .on("mouseout", (event, d) => {
-    d3.select(event.currentTarget).selectAll("circle")
-      .attr("r", (_, i) => {
-        if (i === 0) return d.size * 6
-        if (i === 1) return d.size * 3
-        return d.size
+    starGroups.append("circle")
+      .attr("class", "halo-outer")
+      .attr("r", d => d.size * 6)
+      .attr("fill", d => d.color)
+      .attr("opacity", 0.06)
+
+    starGroups.append("circle")
+      .attr("class", "halo-inner")
+      .attr("r", d => d.size * 3)
+      .attr("fill", d => d.color)
+      .attr("opacity", 0.15)
+
+    starGroups.append("circle")
+      .attr("class", "core")
+      .attr("r", d => d.size)
+      .attr("fill", d => d.color)
+      .attr("opacity", 1)
+
+    starGroups
+      .on("mouseover", function (event, d) {
+        const tooltip = d3.select("#tooltip")
+        const group = d3.select(this)
+
+        group.select("circle.halo-outer").attr("r", d.size * 10).attr("opacity", 0.1)
+        group.select("circle.halo-inner").attr("r", d.size * 5).attr("opacity", 0.2)
+        group.select("circle.core").attr("r", d.size * 2).attr("opacity", 1)
+
+        tooltip
+          .style("opacity", 1)
+          .style("left", event.pageX + "px")
+          .style("top", event.pageY + "px")
+          .html(`<strong>${d.name}</strong><br/>${d.distance} ly<br/>${d.star_type}`)
       })
-    d3.select("#tooltip").style("opacity", 0)
-  })
-}
+      .on("mouseout", function (event, d) {
+        const group = d3.select(this)
+
+        group.select("circle.halo-outer").attr("r", d.size * 6).attr("opacity", 0.06)
+        group.select("circle.halo-inner").attr("r", d.size * 3).attr("opacity", 0.15)
+        group.select("circle.core").attr("r", d.size).attr("opacity", 1)
+
+        d3.select("#tooltip").style("opacity", 0)
+      })
+  }
 
 
   const createText = (svg) => {
