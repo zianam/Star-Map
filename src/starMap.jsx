@@ -149,7 +149,6 @@ function StarMap() {
     for (let i = 1; i < 5; i++) {
       const lyValue = intervalLy * i;
       const radius = lyValue * dist;
-
       svg.append("ellipse")
         .attr("cx", width / 2)
         .attr("cy", height / 2)
